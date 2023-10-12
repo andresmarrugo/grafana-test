@@ -5,7 +5,7 @@ FROM grafana/grafana:latest
 # ENV GRAFANA_VARIABLE_NAME=variable_value
 
 # Copy any custom configuration files or plugins
-# COPY custom.ini /etc/grafana/custom.ini
+COPY grafana.ini /etc/grafana/grafana.ini
 # COPY plugins/* /var/lib/grafana/plugins/
 
 # Expose the Grafana port
